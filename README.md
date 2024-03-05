@@ -8,3 +8,5 @@ You must fix any issues with the previous assignment, especially if it doesn't l
 Your about page must look like the prototype
 Your page must be responsive.
 You can align the elements as you wish but they must look good and not touch the sides of the browser.
+
+https://in-info-web4.informatics.iupui.edu/~fralcala/N215/homework-five/index.html
