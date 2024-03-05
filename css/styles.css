@@ -67,6 +67,42 @@ p {
   margin-bottom: 16px;
 }
 
+.nav-white {
+  height: 50px;
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  border-bottom: 2px solid #fff;
+  font-family: gill;
+  font-size: 15px;
+}
+.nav-white a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-white span {
+  color: #79addc;
+  margin: 0 20px;
+}
+.nav-white .logo {
+  width: 92px;
+  height: 42px;
+}
+.nav-white .menu img {
+  display: none;
+}
+.nav-white .menu .links {
+  min-width: 300px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 nav {
   height: 50px;
   max-width: 980px;
@@ -76,13 +112,13 @@ nav {
   justify-content: space-between;
   position: relative;
   z-index: 99;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #000;
   font-family: gill;
   font-size: 15px;
 }
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 nav span {
   color: #79addc;
@@ -104,6 +140,14 @@ nav .menu .links {
 }
 
 @media all and (max-width: 800px) {
+  .nav-white .menu img {
+    display: block;
+    width: 30px;
+    margin-right: 20px;
+  }
+  .nav-white .menu .links {
+    display: none;
+  }
   nav .menu img {
     display: block;
     width: 30px;
@@ -137,6 +181,7 @@ nav .menu .links {
 .home .hero .callout h1 {
   font-family: nova-thin;
   font-size: 60px;
+  font-weight: 100;
 }
 .home .hero .callout p {
   width: 416px;
@@ -326,6 +371,87 @@ nav .menu .links {
     bottom: 55px;
   }
 }
+.about-container {
+  margin: 0 20px 0 20px;
+}
+.about-container .about {
+  max-width: 980px;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90.5px;
+  margin-bottom: 179px;
+}
+.about-container .about p {
+  font-family: gill;
+  font-size: 16px;
+}
+.about-container .about h1 {
+  font-family: nova-thin;
+  font-weight: 900;
+  font-size: 60px;
+  width: 150px;
+  border-bottom: 2px solid black;
+  margin-bottom: 36.5px;
+}
+.about-container .about h2 {
+  font-family: nova-thin;
+  font-weight: 200;
+  font-size: 40px;
+  margin-top: 95px;
+}
+.about-container .about .h2-line {
+  width: 230px;
+  border-bottom: 2px solid black;
+  margin-top: -12px;
+}
+.about-container .about .container {
+  max-width: 722px;
+  min-height: 150px;
+  margin-top: 37px;
+  display: flex;
+}
+.about-container .about .container .image-holder {
+  min-width: 260px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 21px;
+}
+.about-container .about .container .client1 {
+  background-image: url(../../images/about-client-01.jpg);
+}
+.about-container .about .container .client2 {
+  background-image: url(../../images/about-client-02.jpg);
+}
+.about-container .about .container p {
+  font-family: gill-italic;
+  font-size: 16px;
+  width: 385px;
+}
+.about-container .about .container h3 {
+  top: 50px;
+  text-align: right;
+  margin: 52px -55px 0 0;
+  font-family: nova-thin;
+  color: #79addc;
+  font-size: 20px;
+}
+
+@media all and (max-width: 800px) {
+  .about-container .about .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container .about .container .image-holder {
+    margin-bottom: 20px;
+  }
+  .about-container .about .container h3 {
+    margin: 52px 0px 0 0;
+  }
+}
 footer {
   height: 100px;
   background-color: #79addc;
@@ -337,6 +463,7 @@ footer {
 }
 footer p {
   font-size: 12px;
+  font-family: gill;
 }
 footer .socials {
   font-size: 22.46px;
